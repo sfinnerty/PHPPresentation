@@ -158,6 +158,12 @@ Will return 100 if no ARGB</span><pre>getAlpha</pre>
     </li>
 
                                                                                                         <li class="method public">
+        <a href="#method_setAlpha" title="setAlpha :: Set the alpha % of the ARGB">
+            <span class="description">Set the alpha % of the ARGB</span><pre>setAlpha</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
         <a href="#method_setARGB" title="setARGB :: Set ARGB">
             <span class="description">Set ARGB</span><pre>setARGB</pre>
         </a>
@@ -179,11 +185,11 @@ Will return 100 if no ARGB</span><pre>getAlpha</pre>
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -448,6 +454,33 @@ while doing a write of a workbook and when changes are not allowed.</p></div>
                             </div>
 
                         </div>
+                                            <a id="method_setAlpha"></a>
+                        <div class="element clickable method public  method_setAlpha" data-toggle="collapse" data-target=".method_setAlpha .collapse">
+                            <h2>Set the alpha % of the ARGB</h2>
+                            <pre>setAlpha(integer $alpha = 100) : $this</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$alpha</h4>
+                                                <code>integer</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>$this</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
                                             <a id="method_setARGB"></a>
                         <div class="element clickable method public  method_setARGB" data-toggle="collapse" data-target=".method_setARGB .collapse">
                             <h2>Set ARGB</h2>
@@ -511,7 +544,7 @@ while doing a write of a workbook and when changes are not allowed.</p></div>
                                             <a id="method_setRGB"></a>
                         <div class="element clickable method public  method_setRGB" data-toggle="collapse" data-target=".method_setRGB .collapse">
                             <h2>Set RGB</h2>
-                            <pre>setRGB(string $pValue = &#039;000000&#039;) : \PhpOffice\PhpPresentation\Style\Color</pre>
+                            <pre>setRGB(string $pValue = &#039;000000&#039;, string $pAlpha = &#039;FF&#039;) : \PhpOffice\PhpPresentation\Style\Color</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
 
@@ -526,6 +559,10 @@ while doing a write of a workbook and when changes are not allowed.</p></div>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$pValue</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$pAlpha</h4>
                                                 <code>string</code><p></p>
                                             </div>
                                                                             
@@ -821,7 +858,7 @@ while doing a write of a workbook and when changes are not allowed.</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Fri, 03 Mar 2017 10:59:10 +0000.<br/>
+            generated on Tue, 13 Mar 2018 20:07:21 +0000.<br/>
     </footer>
     </body>
 </html>
