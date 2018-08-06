@@ -60,6 +60,9 @@ class Paragraph implements ComparableInterface
      */
     private $lineSpacing = 100;
 
+    private $spaceBefore = 0;
+    private $spaceAfter = 0;
+
     /**
      * Hash index
      *
@@ -324,6 +327,28 @@ class Paragraph implements ComparableInterface
     public function setLineSpacing($lineSpacing)
     {
         $this->lineSpacing = $lineSpacing;
+        return $this;
+    }
+
+    public function getSpaceBefore()
+    {
+        return $this->spaceBefore;
+    }
+
+    public function setSpaceBefore($spaceBefore)
+    {
+        $this->spaceBefore = $spaceBefore;
+        return $this;
+    }
+
+    public function getSpaceAfter()
+    {
+        return $this->spaceAfter;
+    }
+
+    public function setSpaceAfter($spaceAfter)
+    {
+        $this->spaceAfter = $spaceAfter;
         return $this;
     }
 }

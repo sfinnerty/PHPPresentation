@@ -527,6 +527,23 @@ abstract class AbstractSlide extends AbstractDecoratorWriter
                 $objWriter->endElement();
                 $objWriter->endElement();
 
+
+                if ($paragraph->getSpaceBefore() > 0 ) {
+                    $objWriter->startElement('a:spcBef');
+                    $objWriter->startElement('a:spcPts');
+                    $objWriter->writeAttribute('val', $paragraph->getSpaceBefore() * 100);
+                    $objWriter->endElement();
+                    $objWriter->endElement();
+                }
+
+                if ($paragraph->getSpaceAfter() > 0 ) {
+                    $objWriter->startElement('a:spcAft');
+                    $objWriter->startElement('a:spcPts');
+                    $objWriter->writeAttribute('val', $paragraph->getSpaceAfter() * 100);
+                    $objWriter->endElement();
+                    $objWriter->endElement();
+                }
+
                 // Bullet type specified?
                 if ($paragraph->getBulletStyle()->getBulletType() != Bullet::TYPE_NONE) {
                     // Color
